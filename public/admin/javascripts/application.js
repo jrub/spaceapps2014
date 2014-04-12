@@ -122,6 +122,13 @@
     format: 'image/png',
     attribution: "Hackers"
 });
+
+  var osm = L.tileLayer.wms("http://ows.terrestris.de/osm/service", {
+    layers: 'OSM-WMS',
+    format: 'image/png',
+    attribution: "Hackers"
+});
+  osm.addTo(map);
   nexrad.addTo(map);
 
 }(window.jQuery);
