@@ -115,6 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby
   dm-aggregates
   dm-constraints
   dm-core
