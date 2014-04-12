@@ -115,4 +115,13 @@
     var error_input;
     if (error_input = $('.has-error :input').first()) { error_input.focus(); }
   });
+
+  var map = L.map('map', {crs: L.CRS.EPSG4326}).setView([0, 0], 1);
+  var nexrad = L.tileLayer.wms("https://firms.modaps.eosdis.nasa.gov/wms/", {
+    layers: 'fires24',
+    format: 'image/png',
+    attribution: "Hackers"
+});
+  nexrad.addTo(map);
+
 }(window.jQuery);

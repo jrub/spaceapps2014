@@ -12,7 +12,7 @@ body {
   padding: 0 10px;
 }
 .main-wrapper {
-  padding-top: 70px /* same as footer's height */
+  padding-top: 70px /* same as footers height */
 }
 .main-wrapper-push {
   height: 70px; /* same as the footer */
@@ -345,3 +345,5 @@ footer p {
   }
 }
 /* -- End Application -- */
+
+#map { height: 700px; }
